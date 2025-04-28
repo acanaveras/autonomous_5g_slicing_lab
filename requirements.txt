@@ -7,7 +7,7 @@ langchain_core==0.3.56
 langchain_nvidia_ai_endpoints==0.3.9
 langgraph==0.3.34
 matplotlib==3.10.1
-numpy==1.21.5
+numpy==1.23
 pandas==2.2.3
 paramiko==3.5.1
 pexpect==4.9.0
@@ -16,7 +16,7 @@ pyroute2==0.9.1
 pyserial==3.5
 pyshark==0.6
 python-dotenv==1.1.0
-PyYAML==5.4.1
 PyYAML==6.0.2
 streamlit==1.44.1
 watchdog==6.0.0
+english-words==2.0.1
