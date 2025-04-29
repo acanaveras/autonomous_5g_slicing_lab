@@ -5,3 +5,4 @@ interrupt_after: 30
 LOG_FILE_UE1 : "../llm-slicing-5g-lab/logs/UE1_iperfc.log"
 LOG_FILE_UE2 : "../llm-slicing-5g-lab/logs/UE2_iperfc.log"
 AGENT_LOG_FILE : "../llm-slicing-5g-lab/logs/agent.log"
+API_KEY : "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"
