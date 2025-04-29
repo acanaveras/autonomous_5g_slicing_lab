@@ -22,6 +22,7 @@ logging.basicConfig(
 #llm api to use Nvidia NIM Inference Endpoints.
 llm = ChatNVIDIA(
         model= config_file['model_name'],
+        api_key= config_file['API_KEY'], 
         temperature=0.2,
         top_p=0.7,
         max_tokens=4096,
