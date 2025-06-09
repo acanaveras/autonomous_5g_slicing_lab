@@ -28,7 +28,7 @@ To run the lab, ensure you have:
 
 ## Lab Setup
 
-The lab setup configures a fully functional 5G network simulation environment. To set up the lab, run the Jupyter notebook located at `autonomous_5g_slicing_lab/llm-slicing-5g-lab/DLI_Lab_Setup.ipynb`. The notebook automates the following steps:
+The lab setup configures a fully functional 5G network simulation environment. To set up the lab, first you will need to run autonomous_5g_slicing_lab/Automatic_5G_Network_Lab_Setup.ipynb to configure your environment, and then you will need to run the Jupyter notebook located at `autonomous_5g_slicing_lab/llm-slicing-5g-lab/DLI_Lab_Setup.ipynb`. The notebook automates the following steps:
 
 1. **Install Dependencies**: Installs iPerf3 and Python packages required for the lab, then restarts the Jupyter kernel to apply changes.
 2. **Compile FlexRIC and gNodeB**: Builds the FlexRIC and gNodeB components using a provided script, preparing the RAN Intelligent Controller and base station software.
@@ -40,9 +40,9 @@ The lab setup configures a fully functional 5G network simulation environment. T
 8. **Start iPerf Server**: Runs two iPerf3 servers on the external network to receive traffic from the UEs via the UPF.
 9. **Generate Traffic and Log Data**: Runs iPerf clients on the UEs to generate UDP traffic at alternating speeds (30 Mbps and 120 Mbps), logging performance metrics (e.g., bitrate, packet loss) to a Kinetica database and local log files.
 
-To execute the above, follow these steps:
-1. ** Open 'autonomous_5g_slicing_lab/Automatic_5G_Network_Lab_Setup.ipynb' in main directory and setup your environment keys
-2. ** Open 'autonomous_5g_slicing_lab/llm-slicing-5g-lab/DLI_Lab_Setup.ipynb and set up your 5G Network Environment
+In summary, to start your lab, you need to follow these steps:
+1. **Open 'autonomous_5g_slicing_lab/Automatic_5G_Network_Lab_Setup.ipynb' in the main directory and set up your environment keys
+2. **Open 'autonomous_5g_slicing_lab/llm-slicing-5g-lab/DLI_Lab_Setup.ipynb and set up your 5G Network Environment
 
 ## Running the Agentic Workflow
 
