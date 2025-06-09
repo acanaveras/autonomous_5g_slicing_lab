@@ -14,14 +14,17 @@ A shutdown notebook is also provided to reinitialize the lab if needed.
 
 To run the lab, ensure you have:
 - **Operating System**: Ubuntu (tested on 20.04 or later).
-- **Hardware**: A machine with sufficient resources (e.g., 8GB RAM, multi-core CPU, optional GPU for Kinetica).
+- **Hardware**:
+  - CPU: 12+ cores @ 3,8 GHz, AVX-512 is a necessary
+  - RAM: 32 GB
+  - OS: Modern Linux (e.g., Ubuntu 22.04)
+  - Docker & Docker Compose (latest stable)
 - **Software**:
   - Docker and Docker Compose for the 5G Core Network.
   - Python 3.10+ with Jupyter Notebook.
   - iPerf3 (`sudo apt install -y iperf3`).
   - Kinetica database access (credentials in `.env` file).
 - **Dependencies**: Listed in `requirements.txt` in the respective directories.
-- **Repository Contents**: Clone this repository and verify the presence of all files, including configuration files (`ran-conf/`), scripts (`build_ric_oai_ne.sh`, `multi_ue.sh`, `change_rc_slice.sh`), and Docker Compose files.
 
 ## Lab Setup
 
@@ -37,7 +40,9 @@ The lab setup configures a fully functional 5G network simulation environment. T
 8. **Start iPerf Server**: Runs two iPerf3 servers on the external network to receive traffic from the UEs via the UPF.
 9. **Generate Traffic and Log Data**: Runs iPerf clients on the UEs to generate UDP traffic at alternating speeds (30 Mbps and 120 Mbps), logging performance metrics (e.g., bitrate, packet loss) to a Kinetica database and local log files.
 
-To execute these steps, open `autonomous_5g_slicing_lab/llm-slicing-5g-lab/DLI_Lab_Setup.ipynb` in Jupyter Notebook and run the cells sequentially. Monitor the logs in the `logs/` directory (e.g., `tail -f logs/UE1_iperfc.log`) for real-time feedback.
+To execute the above, follow these steps:
+1. ** Open 'autonomous_5g_slicing_lab/Automatic_5G_Network_Lab_Setup.ipynb' in main directory and setup your environment keys
+2. ** Open 'autonomous_5g_slicing_lab/llm-slicing-5g-lab/DLI_Lab_Setup.ipynb and set up your 5G Network Environment
 
 ## Running the Agentic Workflow
 
@@ -82,6 +87,9 @@ After running the shutdown notebook, you can restart the lab by re-running `DLI_
   - `agentic_pipeline-DLI.ipynb`: Notebook for running the LangGraph agent UI.
   - `requirements.txt`: Python dependencies for the agentic workflow.
 
+## License
+- This repository is based on OAI 5G RAN, CN, and UE, and it is released under [OAI Public License](https://openairinterface.org/legal/oai-public-license/)
+
 ## References
 
 - [Open Air Interface 5G Core Network](https://openairinterface.org/oai-5g-core-network-project/)
@@ -91,3 +99,18 @@ After running the shutdown notebook, you can restart the lab by re-running `DLI_
 - [LangGraph](https://github.com/langchain-ai/langgraph)
 
 For issues or contributions, please open a GitHub issue or submit a pull request.
+
+1. [Aaron Bossert](https://www.linkedin.com/in/aaron-bossert/), Director of Solutions Engineering, [Kinetica](https://www.kinetica.com/)
+2. [Stefan Spettel](https://www.linkedin.com/in/stefan-spettel/), CEO & Co-Founder, [phine.tech](https://phine.tech/)
+4. [Fransiscus Asisi Bimo](https://www.linkedin.com/in/fransiscusbimo/), Ph.D., National Taiwan University of Science and Technology
+6. [Shibani Likhite](https://www.linkedin.com/in/shibani-likhite/), Solution Architect, NVIDIA
+7. [Swastika Dutta](https://www.linkedin.com/in/swastika-dutta/), Solution Architect, NVIDIA
+8. [Ari Uskudar](https://www.linkedin.com/in/ari-u-628b30148/), Product Manager, NVIDIA.
+9. [Maria Amparo Canaveras Galdon](https://www.linkedin.com/in/amparo-canaveras-b2152522/), Senior Solution Architect, NVIDIA
+10. [Ira Bargon III](https://www.linkedin.com/in/ira-bargon-iii-a8661514/), Sr. Director of Technology and Innovation, Sterling
+11. [Lukas Rothender](https://www.linkedin.com/in/lukas-rotheneder-82984327a/), CTO & Co-Founder, [phine.tech](https://phine.tech/)
+
+
+
+
+
