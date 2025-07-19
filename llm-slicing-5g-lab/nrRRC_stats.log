@@ -1,0 +1,11 @@
+UE 0 CU UE ID 1 DU UE ID 9249 RNTI 2421 random identity 0000123456789abc S-TMSI 56789abc:
+    RRC status connected
+    PDU session 0 ID 10 status established
+    associated DU:  (local/integrated CU-DU)
+UE 1 CU UE ID 2 DU UE ID 49708 RNTI c22c random identity 0000123456789abc S-TMSI 56789abc:
+    RRC status connected
+    PDU session 0 ID 10 status established
+    associated DU:  (local/integrated CU-DU)
+
+1 connected DUs 
+[1] DU ID 3584 (gNB-OAI) integrated DU-CU: nrCellID 12345678, PCI 0
