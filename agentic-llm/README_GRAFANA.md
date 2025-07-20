@@ -54,6 +54,7 @@ docker-compose version
 ### 2. Install Python Dependencies
 
 ```bash
+cd ./autonomous_5g_slicing_lab/agentic-llm
 pip install -r requirements_grafana.txt
 ```
 
