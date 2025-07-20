@@ -42,7 +42,13 @@ agentic-llm/
 ## 🛠️ Setup Instructions
 
 ### 1. Prerequisites
-- **Docker & Docker Compose**: Required for running Grafana and InfluxDB
+-** Install docker compose if not installed
+```bash
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+docker-compose version
+```
+
 - **Python 3.8+**
 
 ### 2. Install Python Dependencies
@@ -70,6 +76,7 @@ This will:
 - Provision the dashboard and datasource automatically
 
 ### 4. Verify Services
+- Graphana Services are running in the following ports. Please make sure you are exposing these ports in your environment.
 - **Grafana**: [http://localhost:9002](http://localhost:9002) (Press "Skip" to avoid the user and password authentication)
 - **InfluxDB**: [http://localhost:9001](http://localhost:9001)
 
