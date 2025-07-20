@@ -6,3 +6,4 @@ gnb_logs: ../llm-slicing-5g-lab/logs/gNodeB.log
 interrupt_after: 30
 model_name: meta/llama-3.1-70b-instruct
 reconfig_script_path: ../llm-slicing-5g-lab/change_rc_slice.sh
+GRAPHANA_DASHBOARD: ""

@@ -1,8 +1,8 @@
-UE 0 CU UE ID 1 DU UE ID 9249 RNTI 2421 random identity 0000123456789abc S-TMSI 56789abc:
+UE 0 CU UE ID 1 DU UE ID 33657 RNTI 8379 random identity 0000123456789abc S-TMSI 56789abc:
     RRC status connected
     PDU session 0 ID 10 status established
     associated DU:  (local/integrated CU-DU)
-UE 1 CU UE ID 2 DU UE ID 49708 RNTI c22c random identity 0000123456789abc S-TMSI 56789abc:
+UE 1 CU UE ID 2 DU UE ID 38600 RNTI 96c8 random identity 0000123456789abc S-TMSI 56789abc:
     RRC status connected
     PDU session 0 ID 10 status established
     associated DU:  (local/integrated CU-DU)

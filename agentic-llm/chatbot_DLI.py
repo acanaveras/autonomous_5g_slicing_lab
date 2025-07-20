@@ -148,7 +148,7 @@ def get_cutoff_time() -> str:
 
 def get_grafana_dashboard_url():
     """Get the Grafana dashboard URL for embedding (cloud version)"""
-    return "https://9002-x0dgkr0tb.brevlab.com/d/5g-metrics/5g-network-metrics-dashboard?orgId=1&refresh=5s&theme=dark"
+    return "https://9002-3yqhu0mm9.brevlab.com/d/5g-metrics/5g-network-metrics-dashboard?orgId=1&refresh=5s&theme=dark"
 
 st.set_page_config(page_title="Real-Time Packet Loss & Transfer Rate",  layout="wide")
 st.title("5G-Network Configuration Agent")
@@ -180,7 +180,7 @@ with col_charts:
     try:
         import requests
         # In the health check, use http://localhost:9002
-        response = requests.get("https://9002-x0dgkr0tb.brevlab.com", timeout=5)
+        response = requests.get("https://9002-3yqhu0mm9.brevlab.com", timeout=5)
         if response.status_code == 200:
             
             # Embed Grafana dashboard
