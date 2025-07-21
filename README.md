@@ -44,6 +44,12 @@ In summary, to start your lab, you need to follow these steps:
 1. **Open 'autonomous_5g_slicing_lab/Automatic_5G_Network_Lab_Setup.ipynb' in the main directory and set up your environment keys
 2. **Open 'autonomous_5g_slicing_lab/llm-slicing-5g-lab/DLI_Lab_Setup.ipynb and set up your 5G Network Environment
 
+## Running the Graphana
+
+This lab uses Graphana for visualization. You need to install the Graphana environment with the following instructions 
+1. Open the `autonomous_5g_slicing_lab/agentic-llm/REAME_GRAPHANA.md' and follow the instructions.
+Ensure you verify the Graphana environment, and you save the GRAPHANA_DASHBOARD variable in the `autonomous_5g_slicing_lab/agentic-llm/confg.yaml file.
+
 ## Running the Agentic Workflow
 
 Once the lab is set up, you can run the agentic workflow to monitor network performance and dynamically adjust bandwidth allocation. The workflow uses a LangGraph-based agent to analyze Kinetica database logs and optimize slice configurations.
