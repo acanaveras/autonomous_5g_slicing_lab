@@ -44,7 +44,7 @@ In summary, to start your lab, you need to follow these steps:
 1. **Open 'autonomous_5g_slicing_lab/Automatic_5G_Network_Lab_Setup.ipynb' in the main directory and set up your environment keys
 2. **Open 'autonomous_5g_slicing_lab/llm-slicing-5g-lab/DLI_Lab_Setup.ipynb and set up your 5G Network Environment
 
-## Running the Graphana
+## Running Graphana Dashboard
 
 This lab uses Graphana for visualization. You need to install the Graphana environment with the following instructions 
 1. Open the `autonomous_5g_slicing_lab/agentic-llm/REAME_GRAPHANA.md' and follow the instructions.
