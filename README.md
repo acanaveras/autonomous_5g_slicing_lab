@@ -26,7 +26,7 @@ To run the lab, ensure you have:
   - Kinetica database access (credentials in `.env` file).
 - **Dependencies**: Listed in `requirements.txt` in the respective directories.
 
-## Lab Setup
+## %G Lab Setup
 
 The lab setup configures a fully functional 5G network simulation environment. To set up the lab, first you will need to run autonomous_5g_slicing_lab/Automatic_5G_Network_Lab_Setup.ipynb to configure your environment, and then you will need to run the Jupyter notebook located at `autonomous_5g_slicing_lab/llm-slicing-5g-lab/DLI_Lab_Setup.ipynb`. The notebook automates the following steps:
 
