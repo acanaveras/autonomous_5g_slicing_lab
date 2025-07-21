@@ -90,6 +90,7 @@ After running the shutdown notebook, you can restart the lab by re-running `DLI_
   - `.env`: Environment variables (e.g., Kinetica credentials).
   - `logs/`: Directory for log files (created during execution).
 - `autonomous_5g_slicing_lab/agentic-llm/`:
+  - `README_GRAPHANA.md `: Markdown file to install and setup Graphana.
   - `agentic_pipeline-DLI.ipynb`: Notebook for running the LangGraph agent UI.
   - `requirements.txt`: Python dependencies for the agentic workflow.
 
